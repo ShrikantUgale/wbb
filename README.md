@@ -17,7 +17,7 @@ npm install
 
 ## Usage
 
-Use following commands to run application in `development mode`.
+Use following commands to run application in `development mode`.  
 Note: Run each command in separate terminal in a given sequence.
 ```
 npm run build:watch
