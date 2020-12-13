@@ -1,0 +1,42 @@
+{
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "no-any": true,
+        "no-console": [
+            true,
+            "log",
+            "error"
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "jsx-double"
+        ],
+        "semicolon": [
+            true,
+            "always",
+            "ignore-interfaces"
+        ],
+        "align": [
+            true,
+            "parameters",
+            "members"
+        ]
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**/*.*",
+            "dist/*.*",
+            "resources/*.*"
+        ]
+    }
+}
