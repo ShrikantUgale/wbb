@@ -13,11 +13,11 @@ import { getwordcount } from '../services';
  */
 export default async function readfileAndReturnCount(path: string, name: string): Promise<number> {
   try {
-    const readStream = fs.createReadStream(path);
-
-    let wordCount: number = 0;
 
     return new Promise((resolve, reject) => {
+      const readStream = fs.createReadStream(path);
+      let wordCount: number = 0;
+
       const readInterface = readline.createInterface({
         input: readStream,
         terminal: false,

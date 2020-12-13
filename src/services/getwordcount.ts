@@ -6,6 +6,7 @@
  */
 export default function getwordcount(name: string, line: string): number {
   const wordCount = line
+    .replace(/_+/g, " ")
     .split(/\W+/)
     .filter((l) => l.toLowerCase() === name.toLowerCase());
   return wordCount.length;

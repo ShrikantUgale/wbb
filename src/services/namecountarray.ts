@@ -11,13 +11,11 @@ import { INameAndCount } from '../controller';
 const namecountarray = async (namesArr: string[], olivertwistPath: string):
     Promise<INameAndCount[]> => {
 
-    // This is a time consuming step
     const nameCount = await Promise.all(namesArr.map(async (name): Promise<INameAndCount> => {
         return { name, 'count': await readfileAndReturnCount(olivertwistPath, name) };
     }));
 
     const sortedCount = nameCount.sort((a, b) => b.count - a.count);
-
     return sortedCount;
 };
 
