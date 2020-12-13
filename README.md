@@ -30,6 +30,7 @@ Use following command to run application in `production mode`.
 npm start
 ```
 Try `http://localhost:3000/name-count/{name-to-be-searched}`  
+
 To generate file with name and count use below command.
 ```
 npm run count
